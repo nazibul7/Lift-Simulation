@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lift__container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    gap: 100px;
+    border: 2px solid rgb(121, 130, 133);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CSS for lift input */
+
+.lift__input{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.up-down{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: small;
+}
+.btn{
+    font-size: large;
+    padding: 1px 8px;
+    margin: 1px;
+    cursor: pointer;
+}
+.arrow_btn{
+    padding: 1px 5px;
+    flex: 1;
+    cursor: pointer;
+}
+
+/* CSS for lift */
+
+.lift__box{
+    background-color: rgb(179, 186, 186);
+    width: 40px;
+    height: 60px;
+    border: 1px solid;
+    position: absolute;
+    /* top: 10px; */
+    bottom: 35px;
+    transition: all;
+}
+/* lift box value based on the floor */
+.ground_floor{
+    bottom: 35px;
+    transition: bottom 2s ease;
+}
+.first_floor{
+    bottom: 153px;
+    transition: bottom 2s ease;
+}
+.second_floor{
+    bottom: 271px;
+    transition: bottom 2s ease;
+}
+.third_floor{
+    bottom: 389px;
+    transition: bottom 2s ease;
+}
